@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!------ Include the above in your HEAD tag ---------->
+    
+    <!-- FONT (OPTIONAL) -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Saira+Semi+Condensed:300,400,700"/>
+    
+    
+    <!-- ## fut-player-card ## -->
+    <div class="search">
+        <input id="searchPlayer" type="text" placeholder="player's name...">
+    </div>
+    <div class="fut-player-card">
+        <div class="player-card-top">
+            <div class="player-master-info">
+                <div id="number" class="player-rating">
+                    <span>__</span>
+                </div>
+                <div id="position" class="player-position">
+                    <span>__</span>
+                </div>
+                <div id="nation" class="player-nation">
+                    <img src="data:image/jpeg;base64,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" alt="nation" draggable="false"/>
+                </div>
+                <div id="club" class="player-club">
+                    <img src="https://selimdoyranli.com/cdn/fut-player-card/img/barcelona.svg" alt="club" draggable="false"/>
+                </div>
+            </div>
+            <div class="player-picture">
+                <img src="https://s1.fifaaddict.com/fo4/players/ypypbgak.png?20230921" alt="Messi" draggable="false"/>
+            </div>
+        </div>
+        <div class="player-card-bottom">
+            <div class="player-info">
+                <!-- Player Name-->
+                <div class="player-name">
+                    <span>_____</span>
+                </div>
+                <!-- Player Features-->
+                <div class="player-features">
+                    <div class="player-features-col">
+                        <span>
+                            <div class="player-feature-value">height</div>
+                            <div class="player-feature-title">__</div>
+                        </span>
+                        <span>
+                            <div class="player-feature-value">weight</div>
+                            <div class="player-feature-title">__</div>
+                        </span>
+                        <span>
+                            <div class="player-feature-value">gender</div>
+                            <div class="player-feature-title">__</div>
+                        </span>
+                    </div>
+                    <div class="player-features-col">
+                        <span>
+                            <div class="player-feature-value">side</div>
+                            <div class="player-feature-title">__</div>
+                        </span>
+                        <span>
+                            <div class="player-feature-value">born</div>
+                            <div class="player-feature-title">__</div>
+                        </span>
+                        <span>
+                            <div class="player-feature-value">kit</div>
+                            <div class="player-feature-title">__</div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./assets/js/main.js"></script>
+</html>
