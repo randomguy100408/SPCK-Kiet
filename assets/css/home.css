@@ -1,0 +1,30 @@
+.navbar {
+    background-color: transparent !important;
+    position: relative !important;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    padding: 30px 40px !important;
+
+}
+.slider-outer {
+    height: 100% !important;
+    
+}
+.nav-item a {
+    color: white !important;
+
+}
+.logo-outer a {
+    color: white !important;
+
+}
+.main-container {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+}
+.services-outer {
+    height: 500px;
+    background-color: red;
+}
