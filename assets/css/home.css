@@ -24,10 +24,16 @@
     top: 0;
     right: 0;
 }
-.services-outer {
-    height: 500px;
-    background-color: red;
+.about-messi {
+    padding: auto !important;
+    margin: 150px !important;
+    height: 500px !important;
+    background-color: white !important;
 }
-.introduction-images {
-    height: 50px;
+#image {
+    width: 100px;
+    height: 450px;
+}
+h1 {
+    font-family: 'Roboto Mono', sans-serif;
 }

@@ -25,7 +25,6 @@ body {
 }
 
 body:after {
-	content: '@selimdoyranli';
 	font-size: 1rem;
 	color: #aaa;
 	position: fixed;
@@ -209,6 +208,8 @@ body:after {
 .fut-player-card .player-card-bottom .player-info .player-features .player-features-col:last-child {
 	border: 0;
 }
+
 .search {
-    
+	position: relative;
+	margin-left: 120px;
 }
