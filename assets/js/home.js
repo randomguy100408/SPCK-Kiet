@@ -1,7 +1,5 @@
  HEAD
-document.getElementById("sign-in").addEventListener("click", function() {
-    window.location.href = "login.html"
-})
+
 function checkGetStarted() {
     const checkLogin = JSON.parse(localStorage.getItem("checkLogin")) || false;
     if (checkLogin) {

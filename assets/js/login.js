@@ -1,11 +1,8 @@
 var email = document.getElementById("email");
 var password = document.getElementById("password");
-
 var listUsers = JSON.parse(localStorage.getItem("listUsers")) || [];
-
 document.getElementById("btnSubmit").addEventListener("click", (evt) => {
   evt.preventDefault();
-
   if (email.value.trim().length == 0 || password.value.trim().length == 0) {
     alert("Không được để trống!");
   } else {
