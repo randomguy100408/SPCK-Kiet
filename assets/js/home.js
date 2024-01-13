@@ -2,8 +2,8 @@
 document.getElementById("sign-in").addEventListener("click", function() {
     window.location.href = "login.html"
 })
-const checkLogin = localStorage.getItem("checkLogin") || false;
 function checkGetStarted() {
+    const checkLogin = JSON.parse(localStorage.getItem("checkLogin")) || false;
     if (checkLogin) {
         window.location.href = "player-search.html";
     } else {
