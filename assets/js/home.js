@@ -1,8 +1,7 @@
-<<<<<<< HEAD
+ HEAD
 document.getElementById("sign-in").addEventListener("click", function() {
     window.location.href = "login.html"
 })
-=======
 const checkLogin = localStorage.getItem("checkLogin") || false;
 function checkGetStarted() {
     if (checkLogin) {
@@ -12,4 +11,4 @@ function checkGetStarted() {
         window.location.href = "login.html";
     }
 }
->>>>>>> a7e17aef9f24313d38c158976a16c3a2ce19de1f
+// a7e17aef9f24313d38c158976a16c3a2ce19de1f
